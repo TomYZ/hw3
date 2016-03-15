@@ -1,0 +1,12 @@
+make: make
+
+usage:
+hw3 keygen -p=pphrase -t=period
+hw3 crypt -k=keyfile [file] / stdin
+hw3 invkey keyfile
+hw3 histo -t=period -i=which [file] / stdin
+hw3 solve -l=max_t [file] / stdin
+
+clean: make clean
+
+potential bugs: int solve.c, read all the length of the file, if the file is too large, may cause segment fault or overflow.
